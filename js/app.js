@@ -163,3 +163,21 @@ if (otraPregunta) {
     preguntaPausa.textContent = preguntasPausa[(actual + 1) % preguntasPausa.length];
   });
 }
+
+
+/* Recalcula las publicaciones de Instagram
+después de cambiar de pantalla. */
+
+document.addEventListener("click", function (evento) {
+const botonNavegacion = evento.target.closest("[data-ir]");
+
+if (!botonNavegacion) {
+return;
+}
+
+window.setTimeout(function () {
+if (window.instgrm && window.instgrm.Embeds) {
+window.instgrm.Embeds.process();
+}
+}, 300);
+});
