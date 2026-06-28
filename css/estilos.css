@@ -341,3 +341,177 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+
+/* =====================================================
+PRODUCCIONES DE IA EN EL AULA
+Videos de Instagram dentro del nodo Sospechar
+===================================================== */
+
+.miradas-ia {
+width: 100%;
+margin-top: 3.5rem;
+}
+
+.miradas-ia-cabecera {
+width: min(780px, 100%);
+margin: 0 auto 2rem;
+text-align: center;
+}
+
+.miradas-ia-cabecera h3 {
+margin: 0.5rem 0 1rem;
+font-size: clamp(1.6rem, 4vw, 2.5rem);
+line-height: 1.15;
+}
+
+.miradas-ia-cabecera p {
+line-height: 1.7;
+}
+
+.miradas-ia-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 1.5rem;
+align-items: start;
+}
+
+.mirada-ia-card {
+position: relative;
+overflow: hidden;
+}
+
+.mirada-ia-numero {
+display: grid;
+width: 48px;
+height: 48px;
+margin-bottom: 1rem;
+place-items: center;
+
+border-radius: 50%;
+background: var(--azul, #2336c7);
+color: #ffffff;
+
+font-size: 0.9rem;
+font-weight: 700;
+}
+
+.mirada-ia-texto h4 {
+margin: 0.5rem 0 0.8rem;
+font-size: 1.35rem;
+line-height: 1.25;
+}
+
+.mirada-ia-texto > p {
+line-height: 1.7;
+}
+
+.pregunta-ia {
+margin: 1.3rem 0;
+padding: 1rem 1.1rem;
+
+background: var(--amarillo, #fffbea);
+border-left: 5px solid var(--azul, #2336c7);
+border-radius: 12px;
+}
+
+.pregunta-ia strong {
+display: block;
+margin-bottom: 0.4rem;
+}
+
+.pregunta-ia p {
+margin: 0;
+line-height: 1.6;
+}
+
+/* Publicación embebida de Instagram */
+
+.instagram-contenedor {
+width: min(100%, 540px);
+min-height: 220px;
+margin: 1.5rem auto;
+overflow: hidden;
+border-radius: 15px;
+}
+
+.instagram-contenedor .instagram-media {
+width: 100% !important;
+min-width: 0 !important;
+max-width: 540px !important;
+margin: 0 auto !important;
+}
+
+/* Consigna posterior a cada video */
+
+.consigna-instagram {
+margin-top: 1.5rem;
+padding: 1rem 1.1rem;
+
+background: var(--fondo, #f6f7fb);
+border: 1px solid var(--gris, #e5e7eb);
+border-radius: 12px;
+}
+
+.consigna-instagram h5 {
+margin: 0 0 0.5rem;
+font-size: 1rem;
+}
+
+.consigna-instagram p {
+margin: 0;
+line-height: 1.65;
+}
+
+.consigna-instagram ol {
+display: grid;
+gap: 0.55rem;
+margin: 1rem 0 0;
+padding-left: 1.3rem;
+}
+
+.cierre-miradas-ia {
+width: min(820px, 100%);
+margin: 2rem auto 0;
+padding: 1.4rem;
+
+text-align: center;
+border: 2px dashed var(--azul, #2336c7);
+border-radius: 16px;
+}
+
+.cierre-miradas-ia p {
+margin: 0 0 0.5rem;
+line-height: 1.65;
+}
+
+.cierre-miradas-ia strong {
+line-height: 1.6;
+}
+
+/* Tabletas y celulares */
+
+@media (max-width: 850px) {
+.miradas-ia-grid {
+grid-template-columns: 1fr;
+}
+}
+
+@media (max-width: 600px) {
+.miradas-ia {
+margin-top: 2.5rem;
+}
+
+.mirada-ia-card {
+padding: 1rem;
+}
+
+.mirada-ia-numero {
+width: 42px;
+height: 42px;
+}
+
+.instagram-contenedor {
+width: 100%;
+}
+}
